@@ -30,3 +30,4 @@ urlpatterns = [
 if settings.DEBUG == False:
     urlpatterns += [path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT,}),]
 
+#sss
