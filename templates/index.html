@@ -1,0 +1,780 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+    More Templates Visit ==> ProBootstrap.com
+    Free Template by ProBootstrap.com under the License Creative Commons 3.0 ==> (probootstrap.com/license)
+
+    IMPORTANT: You can do whatever you want with this template but you need to keep the footer link back to ProBootstrap.com
+    -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Adoration Holidays | The Travel Company</title>
+  <meta name="description"
+    content="Adoration Holidays offers luxury travel packages in India, with transportation, accommodation, meals, and activities included. Their expert guides ensure a seamless vacation. Choose from a range of packages to suit your budget. Book your dream holiday today!">
+
+  <meta name="keywords"
+    content="travel company,kashmir tour packages,Adoration Holidays, luxury packages, India, transportation, accommodation, sightseeing, meals, activities, expert guides, budget, vacation, book now, travel agency">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/fonts/ionicons/css/ionicons.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'assets/fonts/flaticon/font/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/css/font-awesome.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+  <style>
+    .card-img-top{
+      aspect-ratio: 1/1;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#probootstrap-navbar" data-offset="200">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">ADORATION HOLIDAYS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
+        aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="ion-navicon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <!-- Hero section starts here  -->
+
+  <section class="probootstrap-cover overflow-hidden relative"
+    style="background-image: url({% static 'assets/images/bg.webp' %});"
+    id="section-home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row align-items-center"{% static >''
+        <div class="c %}ol-md">
+          <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Explore The World With Ease</h2>
+
+          <p class="lead mb-5 probootstrap-animate">
+
+
+          </p>
+          <a href="#packages" role="button" class="btn btn-primary text-white p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">Explore</a>
+          </p>
+        </div>
+        <div class="col-md probootstrap-animate">
+          <form action="" class="probootstrap-form rounded" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="type" value="hero">
+            <div class="form-group">
+              <div class="row mb-3">
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="John Doe" name="name" required>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="name">email</label>
+                    <input type="email" class="form-control" name="email" placeholder="user@example.com" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="form-group col-12">
+                  <label for="name">Phone</label>
+                  <input type="tel" class="form-control" placeholder="123456789" name="phone"
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
+                </div>
+                <div class="form-group col-12 justify-content-center">
+                  <input type="submit" value="Get a Free Quote" name="submit" class="btn btn-primary btn-block w-100">
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- END section -->
+
+
+  <section class="probootstrap_section" id="section-feature-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12 text-center mb-5 probootstrap-animate">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Why Choose us?</h2>
+          <blockquote class="">
+            <p class="lead mb-4"><em>Adoration Holidays is a travel agency that offers a personalized and hassle-free travel experience to our customers. We specialize in providing a wide range of travel services including flight and hotel bookings, transportation, tour packages, and destination-specific services. Our team of experienced travel experts is dedicated to helping our clients create the perfect itinerary that fits their budget, interests, and preferences. We pride ourselves on our exceptional customer service, and we are always available to answer any questions and provide support throughout the travel planning process. At Adoration Holidays, we are committed to making every trip memorable and stress-free for our clients, so they can focus on enjoying their travel experience to the fullest.</em></p>
+            <p class="probootstrap-author">
+              <a href="#" target="_blank">
+                <img src="{% static 'assets/images/person_1.jpg' %}" alt="Shah Aamir" class="rounded-circle">
+                <span class="probootstrap-name">Shah Aamir</span>
+                <span class="probootstrap-title">Managing Director</span>
+              </a>
+            </p>
+          </blockquote>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+
+  <section class="probootstrap_section" id="section-city-guides">
+    <div class="container">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Top Places Around J&K</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <a href="#packages" class="probootstrap-thumbnail">
+            <img
+              src="{% static 'assets/images/gulmarg.webp' %}"
+              alt="Gulmarg" class="img-fluid">
+            <div class="probootstrap-text">
+              <h3>Gulmarg</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <a href="#packages" class="probootstrap-thumbnail">
+            <img
+              src="{% static 'assets/images/tulip.webp' %}"
+              alt="Srinagar" class="img-fluid">
+            <h3>Srinagar</h3>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <a href="#packages" class="probootstrap-thumbnail">
+            <img
+              src="{% static 'assets/images/kashmir.webp' %}"
+              alt="Pahalgam" class="img-fluid">
+            <h3>Pahalgam</h3>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
+          <a href="#packages" class="probootstrap-thumbnail">
+            <img
+              src="{% static 'assets/images/pangong.webp' %}"
+              alt="Ladakh" class="img-fluid">
+            <h3>Ladakh</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="probootstrap_section" id="section-services">
+    <div class="container">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Our Services</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="probootstrap-section-half d-md-flex" id="section-about">
+    <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn"
+      style="background-image: url({% static 'assets/images/autumn-shikara.webp' %})">
+    </div>
+    <div class="probootstrap-text">
+      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">
+        <h2 class="heading mb-4">Customer Service</h2>
+        <p>Customer service is a critical aspect of a travel agency's business. Excellent customer service can ensure a smooth and hassle-free travel experience for clients. A travel agency's customer service can involve assisting clients with travel arrangements, answering their queries, providing them with travel information, and resolving any issues that may arise during the trip. A travel agency with exceptional customer service can gain a positive reputation and retain clients for future travels.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="probootstrap-section-half d-md-flex">
+    <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"
+      style="background-image: url({% static 'assets/images/shikara.webp' %})">
+    </div>
+    <div class="probootstrap-text order-1">
+      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">
+        <h2 class="heading mb-4">Tour Packages</h2>
+        <p>Tour packages are a pre-designed set of travel itineraries that include transportation, accommodations, and other activities. Tour packages are designed to offer a convenient and hassle-free travel experience for customers by taking care of all the details of the trip. The packages are usually based on popular travel destinations, and they include sightseeing tours, cultural experiences, adventure activities, and more. Tour packages often offer significant savings over booking these components separately, and they also provide the convenience of having all aspects of the trip arranged by a single provider. When choosing a tour package, customers should look for a reputable provider with an established track record and good customer reviews. A well-designed and executed tour package can offer a memorable travel experience for customers that they will cherish for a lifetime.</p>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="probootstrap_section" id="section-travel">
+    <div class="container">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Travel With Us</h2>
+        </div>
+      </div>
+
+      <div class="row probootstrap-animate">
+        <div class="col-md-12">
+          <div class="owl-carousel js-owl-carousel">
+            <div class="probootstrap-slide ">
+              <span class="flaticon-teatro-de-la-caridad"></span>
+              <em>Teatro de la Caridad</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-royal-museum-of-the-armed-forces"></span>
+              <em>Royal Museum of the Armed Forces</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-parthenon"></span>
+              <em>Parthenon</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-marina-bay-sands"></span>
+              <em>Marina Bay Sands</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-samarra-minaret"></span>
+              <em>Samarra Minaret</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-chiang-kai-shek-memorial"></span>
+              <em>Chiang Kai Shek Memorial</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-heuvelse-kerk-tilburg"></span>
+              <em>Heuvelse Kerk Tilburg</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-cathedral-of-cordoba"></span>
+              <em>Cathedral of Cordoba</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-london-bridge"></span>
+              <em>London Bridge</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-taj-mahal"></span>
+              <em>Taj Mahal</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-leaning-tower-of-pisa"></span>
+              <em>Leaning Tower of Pisa</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-burj-al-arab"></span>
+              <em>Burj al Arab</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-gate-of-india"></span>
+              <em>Gate of India</em>
+            </div>
+            <div class="probootstrap-slide ">
+              <span class="flaticon-osaka-castle"></span>
+              <em>Osaka Castle</em>
+            </div>
+            <div class="probootstrap-slide">
+              <span class="flaticon-statue-of-liberty"></span>
+              <em>Statue of Liberty</em>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  
+
+  <!-- Packages section starts here  -->
+
+  <section class="probootstrap_section" id="packages">
+    <div class="container">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Packages</h2>
+        </div>
+      </div>
+
+      <div class="row probootstrap-animate">
+
+        <div class="col-md-12 row justify-content-around">         
+
+            <!-- Slide item Start  -->
+            <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="{% static 'assets/images/kashmir.webp' %}"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Marvelous Kashmir</h4>
+                    <h6>Duration : 5 Nights 6 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">View More</a>
+                      <ul class="collapse" id="collapseExample4">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+
+            <!-- Slide item Start  -->
+            <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="{% static 'assets/images/gulmarg.webp' %}"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Kashmir from Height</h4>
+                    <h6>Duration : 4 Nights 5 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">View More</a>
+                      <ul class="collapse" id="collapseExample2">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+
+             <!-- Slide item Start  -->
+             <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="{% static 'assets/images/pangong.webp' %}"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Ladakh, The Mood land</h4>
+                    <h6>Duration : 5 Nights 6 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">View More</a>
+                      <ul class="collapse" id="collapseExample">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+
+             <!-- Slide item Start  -->
+             <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="{% static 'assets/images/pangong.webp' %}"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Ladakh, Land of High Passes</h4>
+                    <h6>Duration : 5 Nights 6 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">View More</a>
+                      <ul class="collapse" id="collapseExample">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+    
+            <!-- Slide item Start  -->
+            <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="{% static 'assets/images/pangong.webp' %}"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Crown of Kashmir</h4>
+                    <h5 class="text-primary bg-dark p-1 rounded">honeymoon special</h5>
+                    <h6>Duration : 5 Nights 6 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">View More</a>
+                      <ul class="collapse" id="collapseExample1">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+            
+            <!-- Slide item Start  -->
+            <div class="card px-2 py-1 my-2" style="width:20rem;">
+              <div class="card-head probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
+                <img
+                  src="https://images.unsplash.com/photo-1588302079178-a44575982480?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1000&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFkYWtofHx8fHx8MTY3NjM5NzUwOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000"
+                  alt="Ladakh" class="img-fluid rounded card-img-top">
+                <div class="w-100 p-0 pt-3 card-body">
+                  <div class="mb-1">
+                    <h4>Jammu-Jammu</h4>
+                    <h6>Duration : 5 Nights 6 Days</h6>
+                    <p>Remote Himalayan region with stunning landscapes, culture and adventure activities.</p>
+                  </div>
+                  <div class="card-details">
+                    <div class="inclusions">
+                      <h6>Inclusions</h6>
+                      <a class="text-uppercase" role="button" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">View More</a>
+                      <ul class="collapse" id="collapseExample3">
+                        <li>Airport Pick and Drop</li>
+                        <li>Welcome Drink on Arrival</li>
+                        <li>Sight Seeing by Private Car</li>
+                        <li>Free Wifi</li>
+                        <li>Shikara Ride</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-primary btn-sm" id="popupBtn"  data-toggle="modal" data-target="#exampleModal">Get a Free Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END slide item -->
+
+        
+
+
+
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+<!-- more services section starts here  -->
+
+  <section class="probootstrap_section bg-light">
+    <div class="container">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">More Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+            <div class="probootstrap-media-image"
+              style="background-image: url({% static 'assets/images/icons/reception.webp' %}); aspect-ratio: 1/1; background-size: 80%; background-position: center; background-repeat: no-repeat;">
+            </div>
+            <div class="media-body">
+              <h5 class="mb-3">01. Hotel Reservation</h5>
+              <p>Our travel agency offers hassle-free hotel reservations for any destination, ensuring a comfortable and convenient stay for our clients. </p>
+            </div>
+          </div>
+
+          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+            <div class="probootstrap-media-image"
+              style="background-image: url({% static 'assets/images/icons/delivery.webp' %});aspect-ratio: 1/1; background-size: 80%; background-position: center; background-repeat: no-repeat;">
+            </div>
+            <div class="media-body">
+              <h5 class="mb-3">02. Transportation</h5>
+              <p>We provide reliable and affordable transportation services including car rentals, airport transfers to make your travel comfortable. </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+            <div class="probootstrap-media-image"
+              style="background-image: url({% static 'assets/images/icons/tour-guide.webp' %}); aspect-ratio: 1/1; background-size: 80%; background-position: center; background-repeat: no-repeat;">
+            </div>
+            <div class="media-body">
+              <h5 class="mb-3">03. Travel Guides</h5>
+              <p>Our travel guides provide expert advice and tips to help you plan your trip and make the most of your travel experience.</p>
+            </div>
+          </div>
+
+          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
+            <div class="probootstrap-media-image"
+              style="background-image: url({% static 'assets/images/icons/tour.webp' %}); aspect-ratio: 1/1; background-size: 80%; background-position: center; background-repeat: no-repeat;">
+            </div>
+            <div class="media-body">
+              <h5 class="mb-3">04. Destination-specific Services</h5>
+              <p>We offer destination-specific services like language translation, cultural experiences, and local tours to enhance your travel experience. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="probootstrap_section" id="section-feature-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12 text-center mb-5 probootstrap-animate">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Testimonial</h2>
+          <blockquote class="">
+            <p class="lead mb-4"><em>"I highly recommend this travel agency for anyone looking to plan a stress-free trip. They took care of all the details and provided excellent recommendations for things to do and see at our destination."</em></p>
+            <p class="probootstrap-author">
+              <a href="https://probootstrap.com/" target="_blank">
+                <img src="{% static 'assets/images/person_1.jpg' %}" alt="Free Template by ProBootstrap.com" class="rounded-circle">
+                <span class="probootstrap-name">Aakaash</span>
+                <span class="probootstrap-title">From Rajasthan</span>
+              </a>
+            </p>
+          </blockquote>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+  <!-- contact us section starts here  -->
+
+  <section class="probootstrap_section bg-light" id="section-contact">
+    <div class="container text-dark">
+      <div class="row text-center mb-5 probootstrap-animate">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Get in Touch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 probootstrap-animate">
+          <p class="mb-5">Adoration Holidays is a travel agency that offers a personalized and hassle-free travel experience to its clients. They provide a wide range of services, including flight and hotel bookings, transportation, tour packages, and destination-specific services. The team is dedicated to helping their clients create the perfect itinerary that fits their budget, interests, and preferences, with exceptional customer service and support.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="probootstrap-contact-details">
+                <li>
+                  <span class="text-uppercase"><span class="ion-paper-airplane"></span> Email</span>
+                  info@adorationholidays.com
+                </li>
+                <li>
+                  <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
+                  +91 7007777456
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="probootstrap-contact-details">
+                <li>
+                  <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
+                  +91 9541282716
+                </li>
+                <li>
+                  <span class="text-uppercase"><span class="ion-location"></span> Address</span>
+                  Palpora, Noorbagh Srinagar, <br>
+                  Jammu and Kashmir 190001
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6  probootstrap-animate">
+          <form action="" method="POST" class="probootstrap-form probootstrap-form-box mb60">
+             {% csrf_token %}
+            <input type="hidden" value="contact" name="type" id="type">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fname" class="sr-only sr-only-focusable">First Name</label>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only sr-only-focusable">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only sr-only-focusable">Message</label>
+              <textarea cols="30" rows="10" class="form-control" id="message" name="message"
+                placeholder="Write your message" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact us section ends here  -->
+
+  <!-- footer section starts here  -->
+
+  <footer class="probootstrap_section probootstrap-border-top">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-12 text-center">
+          <p class="probootstrap_font-14">&copy; 2023. All Rights Reserved. <br> Designed by <a href="https://probootstrap.com/"> ProBootstrap </a>&amp; Developed by <a href="https://instagram.com/aalim_aslam/" target="_blank">Aalim aslam</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section ends here  -->
+
+
+
+  <!-- Modal -->
+
+
+
+  <!-------------------------Modal----------------------->
+  <div class="modal fade coi-pop" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get Free Quotes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" name="" action="">
+            {% csrf_token %}
+            <input type="hidden" value="modelform" name="type" id="type">
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="John doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="Email">Email address</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="user@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Phone Number</label>
+              <input type="tel" class="form-control" name="phone" id="mobile" placeholder="123456789" maxlength="11" required>
+            </div>
+
+            <div class="form-group">
+              <select name="destination" class="form-control" id="exampleFormControlSelect1" >
+                <option value="">Select Destination</option>
+                <option value="Kashmir From Height">Kashmir From Height<small> 4N/5D</small></option>
+                <option value="Crown of Kashmir">Crown of Kashmir<small> 5N/6D</small></option>
+                <option value="Marvelous Kashmir">Marvelous Kashmir<small> 5N/6D</small></option>
+                <option value="Ladakh">Ladakh<small> 5N/6D</small></option>
+                <option value="Jammu">Jammu<small> 5N/6D</small></option>
+              </select>
+
+              <button type="submit" name="submit" class="btn btn-primary mt-2">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'assets/js/select2.min.js' %}"></script>
+ <script src="{% static 'assets/js/main.js' %}"></script>
+
+ <script>
+  $("#popupBtn").click()
+ </script>
+</body>
+
+</html>
