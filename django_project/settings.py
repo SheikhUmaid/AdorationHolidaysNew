@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = '*'
+CSRF_ALLOWED_ORIGINS = ALLOWED_HOSTS
+
+SECURE_SSL_REDIRECT = False
+
 
 # Application definition
 
