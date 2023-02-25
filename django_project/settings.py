@@ -135,11 +135,11 @@ MEDIA_URL = '/media/'
 
 
 
-EMAIL_HOST = 'smtpout.secureserver.net'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'info@adorationholidays.com'
-EMAIL_HOST_PASSWORD = 'VNRA=z-CQ$V-'
-EMAIL_USE_TLS = False 
+EMAIL_HOST_USER = 'helloguys13579@gmail.com'
+EMAIL_HOST_PASSWORD = 'znwtssbdbrwcrobo'
+EMAIL_USE_TLS = True 
 EMAIL_USE_SSL = False
 
 
