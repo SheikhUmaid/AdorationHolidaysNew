@@ -190,13 +190,6 @@ $(document).ready(function ($) {
   };
   ThumbnailOpacity();
 
-  var datePicker = function () {
-    $("#probootstrap-date-departure, #probootstrap-date-arrival").datepicker({
-      format: "m/d/yyyy",
-      autoclose: true,
-    });
-  };
-  datePicker();
 
   //show bootstrap popup on load
   $(window).on("load", function () {
