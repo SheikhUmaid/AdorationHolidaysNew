@@ -191,8 +191,5 @@ $(document).ready(function ($) {
   ThumbnailOpacity();
 
 
-  //show bootstrap popup on load
-  $(window).on("load", function () {
-    $("#exampleModal").modal("show");
-  });
+
 });
