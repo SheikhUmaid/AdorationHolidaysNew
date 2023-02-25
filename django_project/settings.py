@@ -140,7 +140,7 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'info@adorationholidays.com'
 EMAIL_HOST_PASSWORD = 'VNRA=z-CQ$V-'
 EMAIL_USE_TLS = False 
-EMAIL_USE_SSL = True
+EMAIL_USE_SSL = False
 
 
 # Default primary key field type
