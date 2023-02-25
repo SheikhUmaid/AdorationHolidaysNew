@@ -139,8 +139,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'helloguys13579@gmail.com'
 EMAIL_HOST_PASSWORD = 'znwtssbdbrwcrobo'
-EMAIL_USE_TLS = True 
-EMAIL_USE_SSL = False
+EMAIL_USE_TLS = False 
+EMAIL_USE_SSL = True
 
 
 # Default primary key field type
